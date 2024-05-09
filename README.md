@@ -1,2 +1,2 @@
 # hardware-encryption
-Computer Engineering Senior Design Project
+University of Mississippi Computer Engineering Senior Design Project
