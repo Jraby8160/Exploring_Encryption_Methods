@@ -1,4 +1,4 @@
-# Exploring_Encryption_Methods
+# hardware-encryption-methods
 University of Mississippi Computer Engineering Senior Design Project - Cp E 461/462
 
 More details and files will be added soon
