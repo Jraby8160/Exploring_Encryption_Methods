@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Apr 19 12:10:02 2024
+# Process ID: 1472
+# Current directory: C:/Users/Public/Documents/AES/AES_Anurag/Decryption
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7652 C:\Users\Public\Documents\AES\AES_Anurag\Decryption\Decryption.xpr
+# Log file: C:/Users/Public/Documents/AES/AES_Anurag/Decryption/vivado.log
+# Journal file: C:/Users/Public/Documents/AES/AES_Anurag/Decryption\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Public/Documents/AES/AES_Anurag/Decryption/Decryption.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Public/Documents/AES/AES_Anurag/Decryption/Decryption.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Public/Documents/AES/AES_Anurag/Decryption/Decryption.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210292AE3D24A}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210292B7F125A}
+set_property PROGRAM.FILE {C:/Users/Public/Documents/AES/AES_Anurag/Decryption/Decryption.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0_1]
+current_hw_device [get_hw_devices xc7a100t_0_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0_1]
+set_property PROGRAM.FILE {C:/Users/Public/Documents/AES/AES_Anurag/Decryption/Decryption.runs/impl_1/main.bit} [get_hw_devices xc7a100t_0_1]
+program_hw_devices [get_hw_devices xc7a100t_0_1]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0_1] 0]

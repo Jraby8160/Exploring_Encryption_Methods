@@ -1,0 +1,894 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Feb 16 14:33:37 2024
+# Process ID: 12768
+# Current directory: C:/Users/jraby/Documents/decryption/decryption.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/jraby/Documents/decryption/decryption.runs/synth_1/main.vds
+# Journal file: C:/Users/jraby/Documents/decryption/decryption.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1744 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.176 ; gain = 97.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'rx' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/rx.v:3]
+	Parameter clock_speed bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter clock_per_bit bound to: 10417 - type: integer 
+	Parameter init bound to: 2'b00 
+	Parameter start bound to: 2'b01 
+	Parameter readdata bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/rx.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'rx' (1#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decryption_main' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decryption_main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'key' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aes_key_expand_128' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v:5]
+INFO: [Synth 8-6157] synthesizing module 'aes_sbox' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aes_sbox' (2#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v:3]
+INFO: [Synth 8-6157] synthesizing module 'aes_rcon' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_rcon' (3#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'aes_key_expand_128' (4#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'key' (5#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v:5]
+INFO: [Synth 8-6157] synthesizing module 'inverse_main_decrypt' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_decrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decrypt_first' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_first.v:4]
+	Parameter clock_speed bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter clock_per_bit bound to: 10417 - type: integer 
+	Parameter init bound to: 1'b0 
+	Parameter encode bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'inverse_main_first' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_first.v:3]
+INFO: [Synth 8-6157] synthesizing module 'addRoundKey' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'addRoundKey' (6#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v:3]
+INFO: [Synth 8-6157] synthesizing module 'inv_shift_rows' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_shift_rows.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'inv_shift_rows' (7#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_shift_rows.v:4]
+INFO: [Synth 8-6157] synthesizing module 'inv_substitution' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_substituiton.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aes_invS_box' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/aes_invS_box.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aes_invS_box' (8#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/aes_invS_box.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inv_substitution' (9#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_substituiton.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'inverse_main_first' (10#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_first.v:3]
+INFO: [Synth 8-6157] synthesizing module 'inverse_main_mid' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_mid.v:3]
+INFO: [Synth 8-6157] synthesizing module 'inverse_mixcol' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/inverse_mixcol.v:4]
+INFO: [Synth 8-6157] synthesizing module 'inv_GF_2_8_multiplier' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/inv_GF_2_8_multiplier.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'inv_GF_2_8_multiplier' (11#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/inv_GF_2_8_multiplier.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'inverse_mixcol' (12#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/inverse_mixcol.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'inverse_main_mid' (13#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_mid.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt_first' (14#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_first.v:4]
+INFO: [Synth 8-6157] synthesizing module 'decrypt_mid' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_mid.v:4]
+	Parameter clock_speed bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter clock_per_bit bound to: 10417 - type: integer 
+	Parameter init bound to: 1'b0 
+	Parameter encode bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'decrypt_mid' (15#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_mid.v:4]
+INFO: [Synth 8-6157] synthesizing module 'decrypt_final' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_final.v:4]
+	Parameter clock_speed bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter clock_per_bit bound to: 10417 - type: integer 
+	Parameter init bound to: 1'b0 
+	Parameter encode bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'inverse_main_final' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_final.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'inverse_main_final' (16#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_final.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt_final' (17#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decrypt_final.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'inverse_main_decrypt' (18#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/inverse_main_decrypt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decryption_main' (19#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/decryption_main.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tx' [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/tx.v:5]
+	Parameter init bound to: 2'b00 
+	Parameter setup bound to: 2'b01 
+	Parameter writedata bound to: 2'b10 
+	Parameter rest bound to: 1 - type: integer 
+	Parameter clock_speed bound to: 100000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter clock_per_bit bound to: 10417 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tx' (20#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/tx.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main' (21#1) [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/main.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.180 ; gain = 152.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.180 ; gain = 152.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 464.180 ; gain = 152.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jraby/Documents/decryption/decryption.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc]
+Finished Parsing XDC File [C:/Users/jraby/Documents/decryption/decryption.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jraby/Documents/decryption/decryption.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 855.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 855.645 ; gain = 544.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 855.645 ; gain = 544.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 855.645 ; gain = 544.055
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'temp_temp_data_out_reg' and it is trimmed from '128' to '120' bits. [C:/Users/jraby/Documents/decryption/decryption.srcs/sources_1/imports/sources_1/new/rx.v:89]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx'
+INFO: [Synth 8-5546] ROM "temp_data_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out128" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "temp_data_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "temp_clock_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clock_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clock_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clock_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tx'
+INFO: [Synth 8-5546] ROM "temp_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byte_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byte_counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                               00
+                   start |                               01 |                               01
+                readdata |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                              000
+                   setup |                               01 |                              001
+               writedata |                               10 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 855.645 ; gain = 544.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 7     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   3 Input     32 Bit         XORs := 20    
+	   2 Input     32 Bit         XORs := 10    
+	   4 Input     32 Bit         XORs := 10    
+	   2 Input      8 Bit         XORs := 1440  
+	   7 Input      8 Bit         XORs := 144   
++---Registers : 
+	              128 Bit    Registers := 7     
+	              120 Bit    Registers := 1     
+	               25 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 10    
+	   4 Input     25 Bit        Muxes := 1     
+	   3 Input     25 Bit        Muxes := 5     
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1008  
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 57    
+	   4 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+	              120 Bit    Registers := 1     
+	               25 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 5     
+	   4 Input     25 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 6     
+Module aes_key_expand_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
+Module addRoundKey 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module inv_GF_2_8_multiplier 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 40    
+	   7 Input      8 Bit         XORs := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 28    
+Module decrypt_first 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module decrypt_mid 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module decrypt_final 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   3 Input     17 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_encoded_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT1/temp_data_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT1/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT1/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DUT1/data_out128" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'DUT3/data_send_reg[10]' (FDE) to 'DUT3/data_send_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\DUT3/data_send_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DUT3/data_send_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (DUT3/data_send_reg[9]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (DUT3/data_send_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 855.645 ; gain = 544.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------+----------------------+---------------+----------------+
+|Module Name        | RTL Object           | Depth x Width | Implemented As | 
++-------------------+----------------------+---------------+----------------+
+|aes_sbox           | d                    | 256x8         | LUT            | 
+|aes_invS_box       | c                    | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u2/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u1/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u2/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u1/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u2/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u2/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u1/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u0/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u3/d                 | 256x8         | LUT            | 
+|aes_key_expand_128 | u1/d                 | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_first      | DUM2/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_first      | DUM1/RFSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM2/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_mid        | DUM1/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_final      | DUM1/RiSB/invaes01/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes16/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes15/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes14/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes13/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes12/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes11/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes10/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes09/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes08/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes07/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes06/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes05/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes04/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes03/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes02/c | 256x8         | LUT            | 
+|decrypt_final      | DUM2/RiSB/invaes01/c | 256x8         | LUT            | 
++-------------------+----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 906.848 ; gain = 595.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    81|
+|3     |LUT1   |     3|
+|4     |LUT2   |   436|
+|5     |LUT3   |   117|
+|6     |LUT4   |   484|
+|7     |LUT5   |   722|
+|8     |LUT6   |  7000|
+|9     |MUXF7  |  1689|
+|10    |MUXF8  |   811|
+|11    |FDRE   |  1255|
+|12    |FDSE   |     7|
+|13    |IBUF   |     2|
+|14    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------+------+
+|      |Instance             |Module               |Cells |
++------+---------------------+---------------------+------+
+|1     |top                  |                     | 12609|
+|2     |  DUM                |decryption_main      | 10617|
+|3     |    decode           |inverse_main_decrypt | 10617|
+|4     |      first          |decrypt_first        |  2344|
+|5     |        DUM1         |inverse_main_first   |   370|
+|6     |          RFSB       |inv_substitution_165 |   370|
+|7     |            invaes01 |aes_invS_box_166     |    23|
+|8     |            invaes02 |aes_invS_box_167     |    24|
+|9     |            invaes03 |aes_invS_box_168     |    23|
+|10    |            invaes04 |aes_invS_box_169     |    24|
+|11    |            invaes05 |aes_invS_box_170     |    24|
+|12    |            invaes06 |aes_invS_box_171     |    23|
+|13    |            invaes07 |aes_invS_box_172     |    23|
+|14    |            invaes08 |aes_invS_box_173     |    21|
+|15    |            invaes09 |aes_invS_box_174     |    21|
+|16    |            invaes10 |aes_invS_box_175     |    24|
+|17    |            invaes11 |aes_invS_box_176     |    23|
+|18    |            invaes12 |aes_invS_box_177     |    23|
+|19    |            invaes13 |aes_invS_box_178     |    24|
+|20    |            invaes14 |aes_invS_box_179     |    23|
+|21    |            invaes15 |aes_invS_box_180     |    24|
+|22    |            invaes16 |aes_invS_box_181     |    23|
+|23    |        DUM2         |inverse_main_mid_147 |   128|
+|24    |          RiSB       |inv_substitution_148 |   128|
+|25    |            invaes01 |aes_invS_box_149     |     8|
+|26    |            invaes02 |aes_invS_box_150     |     8|
+|27    |            invaes03 |aes_invS_box_151     |     8|
+|28    |            invaes04 |aes_invS_box_152     |     8|
+|29    |            invaes05 |aes_invS_box_153     |     8|
+|30    |            invaes06 |aes_invS_box_154     |     8|
+|31    |            invaes07 |aes_invS_box_155     |     8|
+|32    |            invaes08 |aes_invS_box_156     |     8|
+|33    |            invaes09 |aes_invS_box_157     |     8|
+|34    |            invaes10 |aes_invS_box_158     |     8|
+|35    |            invaes11 |aes_invS_box_159     |     8|
+|36    |            invaes12 |aes_invS_box_160     |     8|
+|37    |            invaes13 |aes_invS_box_161     |     8|
+|38    |            invaes14 |aes_invS_box_162     |     8|
+|39    |            invaes15 |aes_invS_box_163     |     8|
+|40    |            invaes16 |aes_invS_box_164     |     8|
+|41    |      last           |decrypt_final        |   812|
+|42    |        DUM1         |inverse_main_mid_109 |   198|
+|43    |          RiSB       |inv_substitution_130 |   198|
+|44    |            invaes01 |aes_invS_box_131     |     9|
+|45    |            invaes02 |aes_invS_box_132     |    15|
+|46    |            invaes03 |aes_invS_box_133     |     6|
+|47    |            invaes04 |aes_invS_box_134     |     9|
+|48    |            invaes05 |aes_invS_box_135     |    18|
+|49    |            invaes06 |aes_invS_box_136     |    18|
+|50    |            invaes07 |aes_invS_box_137     |    15|
+|51    |            invaes08 |aes_invS_box_138     |    18|
+|52    |            invaes09 |aes_invS_box_139     |    15|
+|53    |            invaes10 |aes_invS_box_140     |    12|
+|54    |            invaes11 |aes_invS_box_141     |    12|
+|55    |            invaes12 |aes_invS_box_142     |     9|
+|56    |            invaes13 |aes_invS_box_143     |     6|
+|57    |            invaes14 |aes_invS_box_144     |     9|
+|58    |            invaes15 |aes_invS_box_145     |    15|
+|59    |            invaes16 |aes_invS_box_146     |    12|
+|60    |        DUM2         |inverse_main_mid_110 |   272|
+|61    |          RiAk       |addRoundKey_112      |    62|
+|62    |          RiSB       |inv_substitution_113 |   210|
+|63    |            invaes01 |aes_invS_box_114     |    15|
+|64    |            invaes02 |aes_invS_box_115     |    15|
+|65    |            invaes03 |aes_invS_box_116     |    15|
+|66    |            invaes04 |aes_invS_box_117     |    12|
+|67    |            invaes05 |aes_invS_box_118     |     9|
+|68    |            invaes06 |aes_invS_box_119     |    21|
+|69    |            invaes07 |aes_invS_box_120     |     9|
+|70    |            invaes08 |aes_invS_box_121     |     9|
+|71    |            invaes09 |aes_invS_box_122     |    21|
+|72    |            invaes10 |aes_invS_box_123     |    12|
+|73    |            invaes11 |aes_invS_box_124     |     9|
+|74    |            invaes12 |aes_invS_box_125     |     9|
+|75    |            invaes13 |aes_invS_box_126     |     9|
+|76    |            invaes14 |aes_invS_box_127     |    21|
+|77    |            invaes15 |aes_invS_box_128     |    15|
+|78    |            invaes16 |aes_invS_box_129     |     9|
+|79    |        DUM3         |inverse_main_final   |    58|
+|80    |          RFAK       |addRoundKey_111      |    58|
+|81    |      mid1           |decrypt_mid          |  2479|
+|82    |        DUM1         |inverse_main_mid_72  |   183|
+|83    |          RiSB       |inv_substitution_92  |   183|
+|84    |            invaes01 |aes_invS_box_93      |    12|
+|85    |            invaes02 |aes_invS_box_94      |    15|
+|86    |            invaes03 |aes_invS_box_95      |     9|
+|87    |            invaes04 |aes_invS_box_96      |    15|
+|88    |            invaes05 |aes_invS_box_97      |     9|
+|89    |            invaes06 |aes_invS_box_98      |    21|
+|90    |            invaes07 |aes_invS_box_99      |     3|
+|91    |            invaes08 |aes_invS_box_100     |    15|
+|92    |            invaes09 |aes_invS_box_101     |     9|
+|93    |            invaes10 |aes_invS_box_102     |    12|
+|94    |            invaes11 |aes_invS_box_103     |     9|
+|95    |            invaes12 |aes_invS_box_104     |     9|
+|96    |            invaes13 |aes_invS_box_105     |    18|
+|97    |            invaes14 |aes_invS_box_106     |     9|
+|98    |            invaes15 |aes_invS_box_107     |     6|
+|99    |            invaes16 |aes_invS_box_108     |    12|
+|100   |        DUM2         |inverse_main_mid_73  |   451|
+|101   |          RiAk       |addRoundKey_74       |    67|
+|102   |          RiSB       |inv_substitution_75  |   384|
+|103   |            invaes01 |aes_invS_box_76      |    24|
+|104   |            invaes02 |aes_invS_box_77      |    24|
+|105   |            invaes03 |aes_invS_box_78      |    24|
+|106   |            invaes04 |aes_invS_box_79      |    24|
+|107   |            invaes05 |aes_invS_box_80      |    24|
+|108   |            invaes06 |aes_invS_box_81      |    24|
+|109   |            invaes07 |aes_invS_box_82      |    24|
+|110   |            invaes08 |aes_invS_box_83      |    24|
+|111   |            invaes09 |aes_invS_box_84      |    24|
+|112   |            invaes10 |aes_invS_box_85      |    24|
+|113   |            invaes11 |aes_invS_box_86      |    24|
+|114   |            invaes12 |aes_invS_box_87      |    24|
+|115   |            invaes13 |aes_invS_box_88      |    24|
+|116   |            invaes14 |aes_invS_box_89      |    24|
+|117   |            invaes15 |aes_invS_box_90      |    24|
+|118   |            invaes16 |aes_invS_box_91      |    24|
+|119   |      mid2           |decrypt_mid_0        |  2481|
+|120   |        DUM1         |inverse_main_mid_35  |   186|
+|121   |          RiSB       |inv_substitution_55  |   186|
+|122   |            invaes01 |aes_invS_box_56      |    15|
+|123   |            invaes02 |aes_invS_box_57      |     9|
+|124   |            invaes03 |aes_invS_box_58      |     9|
+|125   |            invaes04 |aes_invS_box_59      |     3|
+|126   |            invaes05 |aes_invS_box_60      |     9|
+|127   |            invaes06 |aes_invS_box_61      |    12|
+|128   |            invaes07 |aes_invS_box_62      |    21|
+|129   |            invaes08 |aes_invS_box_63      |     9|
+|130   |            invaes09 |aes_invS_box_64      |    15|
+|131   |            invaes10 |aes_invS_box_65      |     9|
+|132   |            invaes11 |aes_invS_box_66      |    24|
+|133   |            invaes12 |aes_invS_box_67      |     6|
+|134   |            invaes13 |aes_invS_box_68      |     9|
+|135   |            invaes14 |aes_invS_box_69      |    12|
+|136   |            invaes15 |aes_invS_box_70      |    15|
+|137   |            invaes16 |aes_invS_box_71      |     9|
+|138   |        DUM2         |inverse_main_mid_36  |   450|
+|139   |          RiAk       |addRoundKey_37       |    66|
+|140   |          RiSB       |inv_substitution_38  |   384|
+|141   |            invaes01 |aes_invS_box_39      |    24|
+|142   |            invaes02 |aes_invS_box_40      |    24|
+|143   |            invaes03 |aes_invS_box_41      |    24|
+|144   |            invaes04 |aes_invS_box_42      |    24|
+|145   |            invaes05 |aes_invS_box_43      |    24|
+|146   |            invaes06 |aes_invS_box_44      |    24|
+|147   |            invaes07 |aes_invS_box_45      |    24|
+|148   |            invaes08 |aes_invS_box_46      |    24|
+|149   |            invaes09 |aes_invS_box_47      |    24|
+|150   |            invaes10 |aes_invS_box_48      |    24|
+|151   |            invaes11 |aes_invS_box_49      |    24|
+|152   |            invaes12 |aes_invS_box_50      |    24|
+|153   |            invaes13 |aes_invS_box_51      |    24|
+|154   |            invaes14 |aes_invS_box_52      |    24|
+|155   |            invaes15 |aes_invS_box_53      |    24|
+|156   |            invaes16 |aes_invS_box_54      |    24|
+|157   |      mid3           |decrypt_mid_1        |  2497|
+|158   |        DUM1         |inverse_main_mid     |   210|
+|159   |          RiSB       |inv_substitution_18  |   210|
+|160   |            invaes01 |aes_invS_box_19      |     9|
+|161   |            invaes02 |aes_invS_box_20      |    18|
+|162   |            invaes03 |aes_invS_box_21      |     9|
+|163   |            invaes04 |aes_invS_box_22      |     6|
+|164   |            invaes05 |aes_invS_box_23      |    18|
+|165   |            invaes06 |aes_invS_box_24      |     9|
+|166   |            invaes07 |aes_invS_box_25      |     9|
+|167   |            invaes08 |aes_invS_box_26      |    18|
+|168   |            invaes09 |aes_invS_box_27      |    12|
+|169   |            invaes10 |aes_invS_box_28      |    12|
+|170   |            invaes11 |aes_invS_box_29      |     9|
+|171   |            invaes12 |aes_invS_box_30      |    15|
+|172   |            invaes13 |aes_invS_box_31      |    12|
+|173   |            invaes14 |aes_invS_box_32      |    18|
+|174   |            invaes15 |aes_invS_box_33      |    18|
+|175   |            invaes16 |aes_invS_box_34      |    18|
+|176   |        DUM2         |inverse_main_mid_2   |   442|
+|177   |          RiAk       |addRoundKey          |    58|
+|178   |          RiSB       |inv_substitution     |   384|
+|179   |            invaes01 |aes_invS_box         |    24|
+|180   |            invaes02 |aes_invS_box_3       |    24|
+|181   |            invaes03 |aes_invS_box_4       |    24|
+|182   |            invaes04 |aes_invS_box_5       |    24|
+|183   |            invaes05 |aes_invS_box_6       |    24|
+|184   |            invaes06 |aes_invS_box_7       |    24|
+|185   |            invaes07 |aes_invS_box_8       |    24|
+|186   |            invaes08 |aes_invS_box_9       |    24|
+|187   |            invaes09 |aes_invS_box_10      |    24|
+|188   |            invaes10 |aes_invS_box_11      |    24|
+|189   |            invaes11 |aes_invS_box_12      |    24|
+|190   |            invaes12 |aes_invS_box_13      |    24|
+|191   |            invaes13 |aes_invS_box_14      |    24|
+|192   |            invaes14 |aes_invS_box_15      |    24|
+|193   |            invaes15 |aes_invS_box_16      |    24|
+|194   |            invaes16 |aes_invS_box_17      |    24|
+|195   |  DUT1               |rx                   |  1900|
+|196   |  DUT3               |tx                   |    88|
++------+---------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 949.379 ; gain = 637.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:23 . Memory (MB): peak = 949.379 ; gain = 246.324
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 949.379 ; gain = 637.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2583 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 949.379 ; gain = 650.668
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jraby/Documents/decryption/decryption.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 949.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 16 14:35:22 2024...

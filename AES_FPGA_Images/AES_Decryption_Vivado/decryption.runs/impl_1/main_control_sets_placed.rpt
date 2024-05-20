@@ -1,0 +1,90 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Fri Feb 16 14:36:25 2024
+| Host         : SOE-EE-237552 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      8 |            2 |
+|     12 |            1 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              50 |            5 |
+| Yes          | No                    | No                     |            1874 |          770 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             556 |          119 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------+------------------------------------------+------------------+----------------+
+|  Clock Signal  |                   Enable Signal                   |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------+------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | DUT3/temp_out_i_1_n_0                             |                                          |                1 |              2 |
+|  clk_IBUF_BUFG | DUT3/byte_counter[3]_i_2_n_0                      | DUT3/byte_counter[3]_i_1_n_0             |                1 |              8 |
+|  clk_IBUF_BUFG | DUT3/bit_counter[3]_i_2_n_0                       | DUT3/bit_counter[3]_i_1_n_0              |                2 |              8 |
+|  clk_IBUF_BUFG | DUT3/clock_counter[16]_i_2__4_n_0                 | DUT3/data_send[8]_i_1_n_0                |                2 |             12 |
+|  clk_IBUF_BUFG | DUT3/data_send[8]_i_1_n_0                         |                                          |                8 |             16 |
+|  clk_IBUF_BUFG | DUT3/clock_counter[16]_i_2__4_n_0                 | DUT3/clock_counter[16]_i_1_n_0           |                2 |             22 |
+|  clk_IBUF_BUFG | DUT1/output_array_2                               |                                          |                5 |             30 |
+|  clk_IBUF_BUFG |                                                   |                                          |               15 |             44 |
+|  clk_IBUF_BUFG |                                                   | DUT1/temp_clock_counter_0                |                5 |             50 |
+|  clk_IBUF_BUFG | DUM/decode/last/clock_counter0                    | DUM/decode/mid3/clock_counter_reg[24]_0  |                7 |             50 |
+|  clk_IBUF_BUFG | DUM/decode/first/clock_counter0                   | DUT1/clock_counter_reg[24]_0             |                7 |             50 |
+|  clk_IBUF_BUFG | DUM/decode/mid1/clock_counter0                    | DUM/decode/first/clock_counter_reg[24]_0 |                7 |             50 |
+|  clk_IBUF_BUFG | DUM/decode/mid2/clock_counter0                    | DUM/decode/mid1/clock_counter_reg[24]_0  |                7 |             50 |
+|  clk_IBUF_BUFG | DUM/decode/mid3/clock_counter0                    | DUM/decode/mid2/clock_counter_reg[24]_0  |                7 |             50 |
+|  clk_IBUF_BUFG | DUT1/clock_counter[0]_i_1__4_n_0                  |                                          |                6 |             50 |
+|  clk_IBUF_BUFG | DUT1/temp_temp_data_out_1                         |                                          |               54 |            240 |
+|  clk_IBUF_BUFG | DUM/decode/last/temp_encoded_data[127]_i_1__3_n_0 |                                          |              127 |            256 |
+|  clk_IBUF_BUFG | DUM/decode/first/temp_encoded_data[127]_i_1_n_0   |                                          |              126 |            256 |
+|  clk_IBUF_BUFG | DUM/decode/mid1/temp_encoded_data[127]_i_1__0_n_0 |                                          |              128 |            256 |
+|  clk_IBUF_BUFG | DUM/decode/mid2/temp_encoded_data[127]_i_1__1_n_0 |                                          |              128 |            256 |
+|  clk_IBUF_BUFG | DUM/decode/mid3/temp_encoded_data[127]_i_1__2_n_0 |                                          |              128 |            256 |
+|  clk_IBUF_BUFG | DUT1/data_out128                                  | DUT1/data_out128[127]_i_1_n_0            |               77 |            256 |
+|  clk_IBUF_BUFG | DUT1/temp_data_out_3                              |                                          |               59 |            256 |
++----------------+---------------------------------------------------+------------------------------------------+------------------+----------------+
+
+

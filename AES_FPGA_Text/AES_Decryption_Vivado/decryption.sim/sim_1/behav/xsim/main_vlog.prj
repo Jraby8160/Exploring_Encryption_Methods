@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/aes_invS_box.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/decrypt_final.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/decrypt_first.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/decrypt_mid.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/decryption_main.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/inv_GF_2_8_multiplier.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_shift_rows.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/inv_substituiton.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/inverse_main_decrypt.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/inverse_main_final.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/inverse_main_first.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/inverse_main_mid.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/inverse_mixcol.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/rx.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/tx.v" \
+"../../../../decryption_uart.srcs/sources_1/imports/sources_1/new/main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

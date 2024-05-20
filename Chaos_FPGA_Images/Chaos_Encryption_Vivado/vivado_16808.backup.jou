@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Apr 12 13:03:02 2024
+# Process ID: 16808
+# Current directory: E:/Chaos/Chaos_Encryption
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12648 E:\Chaos\Chaos_Encryption\Chaos_Encryption.xpr
+# Log file: E:/Chaos/Chaos_Encryption/vivado.log
+# Journal file: E:/Chaos/Chaos_Encryption\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Chaos/Chaos_Encryption/Chaos_Encryption.xpr
+update_compile_order -fileset sources_1

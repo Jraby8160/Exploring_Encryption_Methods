@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log permutation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source permutation.tcl
+
+
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source permutation.tcl -notrace
+Command: synth_design -top permutation -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16416 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 408.648 ; gain = 95.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'permutation' [C:/Users/Public/Documents/Chaos/Testing/Testing.srcs/sources_1/new/permutation.sv:1]

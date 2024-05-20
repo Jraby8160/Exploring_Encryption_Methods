@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/GF_2_8_multiplier.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/aes_S_box.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/encrypt_final.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/encrypt_first.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/encrypt_mid.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/encryption_main.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v" \
+"../../../../Encryption.srcs/sources_1/new/main.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/main_encrypt.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/main_final.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/main_first.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/main_mid.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/mix_col.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/rx.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/shift_rows.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/imports/sources_1/new/substitution.v" \
+"../../../../Encryption.srcs/sources_1/imports/sources_1/new/tx.v" \
+"../../../../Encryption.srcs/sim_1/imports/new/rx_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

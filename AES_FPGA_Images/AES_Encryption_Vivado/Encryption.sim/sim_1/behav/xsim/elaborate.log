@@ -1,0 +1,33 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d1d1d8fbff57453098b55894cf0db348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot rx_sim_behav xil_defaultlib.rx_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rx
+Compiling module xil_defaultlib.aes_sbox
+Compiling module xil_defaultlib.aes_rcon
+Compiling module xil_defaultlib.aes_key_expand_128
+Compiling module xil_defaultlib.key_default
+Compiling module xil_defaultlib.addRoundKey
+Compiling module xil_defaultlib.main_first
+Compiling module xil_defaultlib.aes_S_box
+Compiling module xil_defaultlib.substitution
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.GF_2_8_multiplier
+Compiling module xil_defaultlib.mix_col
+Compiling module xil_defaultlib.main_mid
+Compiling module xil_defaultlib.encrypt_first
+Compiling module xil_defaultlib.encrypt_mid
+Compiling module xil_defaultlib.main_final
+Compiling module xil_defaultlib.encrypt_final
+Compiling module xil_defaultlib.main_encrypt
+Compiling module xil_defaultlib.encryption_main
+Compiling module xil_defaultlib.tx
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.rx_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rx_sim_behav

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Apr 12 13:03:02 2024
+# Process ID: 16808
+# Current directory: E:/Chaos/Chaos_Encryption
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12648 E:\Chaos\Chaos_Encryption\Chaos_Encryption.xpr
+# Log file: E:/Chaos/Chaos_Encryption/vivado.log
+# Journal file: E:/Chaos/Chaos_Encryption\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Chaos/Chaos_Encryption/Chaos_Encryption.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Public/Documents/Chaos/Chaos_Encryption' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/../../jraby/Documents/Encryption/Encryption.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc', nor could it be found using path 'C:/Users/jraby/Documents/Encryption/Encryption.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 789.816 ; gain = 134.863
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 13:04:35 2024...

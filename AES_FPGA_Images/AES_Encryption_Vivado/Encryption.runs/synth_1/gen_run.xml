@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1708114686">
+  <File Type="PA-TCL" Name="main.tcl"/>
+  <File Type="REPORTS-TCL" Name="main_reports.tcl"/>
+  <File Type="RDS-RDS" Name="main.vds"/>
+  <File Type="RDS-UTIL" Name="main_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="main_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="main.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/GF_2_8_multiplier.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/GF_2_8_multiplier.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/imports/new/a.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/addRoundKey.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/aes_S_box.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/aes_S_box.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/imports/new/b.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/imports/new/c.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/encrypt_final.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/encrypt_final.v"/>
+        <Attr Name="ImportTime" Val="1618986848"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/encrypt_first.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/encrypt_first.v"/>
+        <Attr Name="ImportTime" Val="1618986648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/encrypt_mid.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/encrypt_mid.v"/>
+        <Attr Name="ImportTime" Val="1618986689"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/encryption_main.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/encryption_main.v"/>
+        <Attr Name="ImportTime" Val="1618983337"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/imports/new/key.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/main_encrypt.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/main_encrypt.v"/>
+        <Attr Name="ImportTime" Val="1618987237"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/main_final.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/main_final.v"/>
+        <Attr Name="ImportTime" Val="1618986516"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/main_first.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/main_first.v"/>
+        <Attr Name="ImportTime" Val="1618985881"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/main_mid.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/main_mid.v"/>
+        <Attr Name="ImportTime" Val="1618986335"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/mix_col.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/mix_col.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/rx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/rx.v"/>
+        <Attr Name="ImportTime" Val="1618887659"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/shift_rows.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/shift_rows.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/sources_1/new/substitution.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/imports/sources_1/new/substitution.v"/>
+        <Attr Name="ImportTime" Val="1618793816"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/tx.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/sources_1/new/tx.v"/>
+        <Attr Name="ImportTime" Val="1618789420"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/main.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../jraby/Downloads/encryption_uart/encryption_uart.srcs/sources_1/new/main.v"/>
+        <Attr Name="ImportTime" Val="1618987880"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="main"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../aesdata/complete uart_encryption/complete uart.srcs/constrs_1/imports/Desktop/Nexys4DDR_and_NEXYSA7_master.xdc"/>
+        <Attr Name="ImportTime" Val="1618791270"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

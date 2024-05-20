@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/GF_2_8_multiplier.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/a.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/addRoundKey.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/aes_S_box.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/b.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/c.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/encrypt_final.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/encrypt_first.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/encrypt_mid.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/encryption_main.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/key.v" \
+"../../../../encryption_uart.srcs/sources_1/new/main.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/main_encrypt.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/main_final.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/main_first.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/main_mid.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/mix_col.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/rx.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/shift_rows.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/imports/sources_1/new/substitution.v" \
+"../../../../encryption_uart.srcs/sources_1/imports/sources_1/new/tx.v" \
+"../../../../encryption_uart.srcs/sim_1/imports/new/rx_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

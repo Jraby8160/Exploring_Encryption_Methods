@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Apr 11 13:34:05 2024
+# Process ID: 9892
+# Current directory: C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.runs/synth_1
+# Command line: vivado.exe -log encryption.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source encryption.tcl
+# Log file: C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.runs/synth_1/encryption.vds
+# Journal file: C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source encryption.tcl -notrace
+Command: synth_design -top encryption -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3836 
+WARNING: [Synth 8-2611] redeclaration of ansi port image_encrypted is not allowed [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:8]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 421.250 ; gain = 109.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'encryption' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:1]
+INFO: [Synth 8-6157] synthesizing module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:1]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:17]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:29]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:30]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:31]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:32]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:29]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:30]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:31]
+WARNING: [Synth 8-639] system function call 'countones' not supported [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'parameter_gen' (1#1) [C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.srcs/sources_1/new/parameter.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'K' does not match port width (256) of module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:18]
+WARNING: [Synth 8-689] width (8) of port connection 'xl' does not match port width (2) of module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:18]
+WARNING: [Synth 8-689] width (8) of port connection 'xr' does not match port width (2) of module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:18]
+WARNING: [Synth 8-689] width (8) of port connection 'r1' does not match port width (2) of module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:18]
+WARNING: [Synth 8-689] width (8) of port connection 'r2' does not match port width (2) of module 'parameter_gen' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:18]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/key_expansion.v:1]
+INFO: [Synth 8-6157] synthesizing module 'v18' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/map/v18.v:1]
+ERROR: [Synth 8-660] unable to resolve 'flipped_sine_map' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/map/v18.v:21]
+ERROR: [Synth 8-6156] failed synthesizing module 'v18' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/map/v18.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'key_expansion' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/key_expansion.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'encryption' [C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/encryption/encryption.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:11:35 ; elapsed = 00:11:36 . Memory (MB): peak = 934.164 ; gain = 622.078
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 15 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 13:45:47 2024...

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Apr 11 13:20:19 2024
+# Process ID: 8392
+# Current directory: C:/Users/Public/Documents/Chaos/Chaos_Encryption
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13448 C:\Users\Public\Documents\Chaos\Chaos_Encryption\Chaos_Encryption.xpr
+# Log file: C:/Users/Public/Documents/Chaos/Chaos_Encryption/vivado.log
+# Journal file: C:/Users/Public/Documents/Chaos/Chaos_Encryption\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 863.078 ; gain = 116.262
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Apr 11 13:34:03 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Public/Documents/Chaos/Chaos_Encryption/Chaos_Encryption.runs/synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property file_type SystemVerilog [get_files  C:/Users/Public/Documents/Chaos/Chaos_Replit_3-28-24/parameter_generation/map/basic_map/tent_map.v]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 14:40:30 2024...
